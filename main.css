@@ -79,3 +79,11 @@ button {
     width: 100px;
     height: 100px;
 }
+
+.animate__animated.animate__fadeInLeft, .animate__animated.animate__fadeInRight {
+    --animate-duration: 2s;
+}
+
+/* :root {
+    --animate-duration: 2s;
+} */
