@@ -97,3 +97,8 @@ button {
 .animate__animated.animate__rotateOut {
     --animate-duration: 5s;
 }
+
+.form__contaonter {
+    width: 550px;
+}
+
