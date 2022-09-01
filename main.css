@@ -231,6 +231,7 @@ footer {
 }
 
 /* Мобильная версия сайта*/
+
 @media (max-width: 720px) {
     header {
         padding: 10px;
