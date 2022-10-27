@@ -4,8 +4,8 @@
 //let ctx = canvas.getContext("2d");
 
 const COLORS = ["255,108,80", "5,117,18", "29,39,57", "67,189,81"];
-const BUBBLE_DENSITY = 100;
-const bubbles = [];
+const BUBBLE_DENSITY = 45;
+//const bubbles = [];
 
 function generateDecimalBetween(left, right) {
   return (Math.random() * (left - right) + right).toFixed(2);
@@ -27,7 +27,8 @@ class Bubble {
     init() {
         this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
         this.alpha = generateDecimalBetween(5, 10) / 10;
-        this.size = generateDecimalBetween(10, 20);
+        // this.size = generateDecimalBetween(10, 20);
+        this.size = generateDecimalBetween(1, 8);
         this.translateX = generateDecimalBetween(0, this.canvasWidth);
         this.translateY = generateDecimalBetween(0, this.canvasHeight);
         this.velocity = generateDecimalBetween(20, 40);
@@ -97,11 +98,6 @@ class CanvasBackground {
     }
 }
 
-    // start() {
-    //     this.canvasSize();
-    //     this.generateBubbles();
-    //     this.animate();
-    // }
   
   // bubbles.push(new Bubble(canvas));
   // bubbles.push(new Bubble(canvas));
