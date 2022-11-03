@@ -5,14 +5,24 @@ body {
   }
 
 header {
-    position: sticky;
+    /* position: sticky; */
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white;
+    /* background-color: white; */
+    left: 0;
+    right: 0;
+    background-color: transparent;
     top: 0;
     z-index: 1;
+    transition: background-color 0.25s ease;
+}
+
+.header__scrolled {
+    background-color: white;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 .header__logo {
@@ -49,7 +59,8 @@ button {
 
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    /* padding-top: 115px; */
+    padding-top: 200px;
     padding-bottom: 115px;
     background: url('img/back.png') no-repeat;
     background-position: center;
