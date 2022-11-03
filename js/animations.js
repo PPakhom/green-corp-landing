@@ -41,10 +41,10 @@ document.querySelector("#budget").addEventListener("change", function handleSele
         document.querySelector("#form form").insertBefore(formContainer, document.querySelector(".form__submit"));
     }
   
-    const otherInput = document.querySelector('.form__other-input');
-    if (event.target.value !== 'other' && otherInput) {
+    const otherInput = document.querySelector(".form__other-input");
+    if (event.target.value !== "other" && otherInput) {
         // Удаляем ранее добавленное текстовое поле, если оно есть в DOM
-        document.querySelector('#form form').removeChild(otherInput);
+        document.querySelector("#form form").removeChild(otherInput);
     
     }
   });
@@ -60,43 +60,39 @@ function updateScroll() {
 
     // Запуск анимации увеличения числа до 5000+
     let windowBottomPosition = window.scrollY + window.innerHeight;
-    let countElementPosition = document.querySelector('.features__clients-count').offsetTop;
+    let countElementPosition = document.querySelector(".features__clients-count").offsetTop;
     if (windowBottomPosition >= countElementPosition && !animationInited) {
         animationInited = true;
         initIncreaseNumberAnimation();
     }
 }
 
-window.addEventListener('scroll', updateScroll);
+window.addEventListener("scroll", updateScroll);
 /*
 function addSmoothScroll(anchor) {
-    anchor.addEventListener('click', onLinkClick);
+    anchor.addEventListener("click", onLinkClick);
 }
 
 function onLinkClick(event) {
     event.preventDefault();
-    document.querySelector(event.target.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
+    document.querySelector(event.target.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
     });
     
 }
 */
 
 function addSmoothScroll(anchor) {
-  anchor.addEventListener('click', function (e) {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
  
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
     });
   });
 }
  
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  addSmoothScroll(anchor);
-});
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll("a[href^=\"#\"]").forEach(anchor => {
     addSmoothScroll(anchor);
 });
 
