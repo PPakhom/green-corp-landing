@@ -23,8 +23,6 @@ function initIncreaseNumberAnimation() {
     increaseNumberAnimationStep(0, element, 5000);
 }
 
-// initIncreaseNumberAnimation();
-
 document.querySelector("#budget").addEventListener("change", function handleSelectChange(event) {
     if (event.target.value === "other") {
         // Добавляем текстовое поле
@@ -68,19 +66,6 @@ function updateScroll() {
 }
 
 window.addEventListener("scroll", updateScroll);
-/*
-function addSmoothScroll(anchor) {
-    anchor.addEventListener("click", onLinkClick);
-}
-
-function onLinkClick(event) {
-    event.preventDefault();
-    document.querySelector(event.target.getAttribute("href")).scrollIntoView({
-        behavior: "smooth"
-    });
-    
-}
-*/
 
 function addSmoothScroll(anchor) {
   anchor.addEventListener("click", function (e) {

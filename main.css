@@ -5,13 +5,11 @@ body {
   }
 
 header {
-    /* position: sticky; */
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    /* background-color: white; */
     left: 0;
     right: 0;
     background-color: transparent;
@@ -59,7 +57,6 @@ button {
 
     justify-content: space-around;
     align-items: center;
-    /* padding-top: 115px; */
     padding-top: 200px;
     padding-bottom: 115px;
     background: url('img/back.png') no-repeat;
@@ -89,10 +86,6 @@ button {
     max-width: 550px;
 }
 
-/* .about__images {
-    display: flex;
-} */
-
 .about__image {
     width: 500px;
 }
@@ -107,14 +100,6 @@ button {
  .animate__animated.animate__fadeInLeft, .animate__animated.animate__fadeInRight {
     --animate-duration: 2s;
 } 
-/* .animate__animated.animate__rotateIn {
-    --animate-duration: 5s;
-    animation-direction: reverse;
-    --animate-repeat: 2;
-} */
-/* .animate__animated.animate__rotateOut {
-    --animate-duration: 5s;
-} */
 
 .form__containter {
     width: 550px;
@@ -361,7 +346,6 @@ footer {
     width: 50%;
     background-image: url(img/promo.jpg);
     background-repeat: no-repeat;
-    /* background: url('img/promo.jpg') no-repeat; */
     background-position: center;
     background-size: cover;
     flex-shrink: 0;
@@ -409,18 +393,6 @@ footer {
     margin-left: 5px;
 }
 
-/* .card .solar {
-    color: #ffb406;
-}
-
-.card .graph {
-    color: #ad1714;
-}
-
-.card .line {
-    color: #22a030;
-} */
-
 /* Канвас */
 .orb-canvas {
     position: absolute;
@@ -432,7 +404,6 @@ footer {
 
 
 /* Мобильная версия сайта*/
-
 @media (max-width: 720px) {
     header {
         padding: 10px;
@@ -508,9 +479,6 @@ footer {
         margin-bottom: 30px;
     }
     .features__rate-box {
-        /* margin-left: initial;
-        margin-right: initial; */
-        /* margin-left: 0px; */
         margin-right: 0px;
         margin-bottom: 30px;
     }
@@ -526,12 +494,9 @@ footer {
     .promo__right {
         padding: 50px 10px;
     }
-    
-    
  }
 
  /* Версия сайта для планшетов*/
-
  @media (max-width: 1024px) {
     .about {
         padding: 115px 20px;
@@ -551,4 +516,3 @@ footer {
         height: 75px;
     }
  }
-
